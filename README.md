@@ -1,2 +1,2 @@
 # git-repo
-For learning purpose
+Created a git repo
