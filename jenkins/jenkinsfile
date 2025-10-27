@@ -11,7 +11,7 @@ echo "Build stage is completed"
 stage ('deploy') {
 steps{
 sh '''
-echo "Deploy is completed"
+echo "Deploying is completed"
 '''
 }
 }
