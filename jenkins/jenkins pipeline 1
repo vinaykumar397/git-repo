@@ -1,1 +1,26 @@
-
+pipeline {
+agent any 
+stages{
+      stage('build') {
+steps{
+    sh '''
+       echo "welocome to build stage" 
+   '''
+    }
+}
+     stage('test') {
+steps{
+       sh '''
+           echo "welcome to test dsatge"
+     '''
+   }
+}
+             stage('deploy){
+     steps{
+sh '''
+        echo "welcome to deploay stage"
+   '''
+     }  
+}
+}
+}
