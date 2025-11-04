@@ -15,7 +15,6 @@ stage ('deploy') {
 steps{
 sh '''
       echo "Executing the script.sh"
-      bash ${WORKSAPCE}/linux
       echo "Deploying is completed"
 '''
 }
