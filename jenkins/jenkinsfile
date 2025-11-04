@@ -14,9 +14,9 @@ echo " next stage is deploy"
 stage ('deploy') {
 steps{
 sh '''
-     echo " Executing the script.sh"
-      bash ${WORKSAPCE}/linus/script.sh
-echo "Deploying is completed"
+      echo "Executing the script.sh"
+      bash ${WORKSAPCE}/linux/script.sh
+      echo "Deploying is completed"
 '''
 }
 }
