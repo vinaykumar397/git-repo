@@ -4,6 +4,8 @@ stages{
 stage ('build') {
 steps{
 sh '''
+     echo "Listing WORKSAPCE contents:"
+ls -l ${WORKSPACE}
 echo "Build stage is completed"
 '''
 }
