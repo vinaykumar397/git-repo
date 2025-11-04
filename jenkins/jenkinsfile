@@ -7,6 +7,7 @@ sh '''
      echo "Listing WORKSAPCE contents:"
 ls -l ${WORKSPACE}
 echo "Build stage is completed"
+echo " next stage is deploy"
 '''
 }
 }
