@@ -4,6 +4,8 @@ stages{
       stage('build') {
 steps{
     sh '''
+      echo " Listing  WORKSPACE contents:"
+      ls -l ${WORKSPACE}
        echo "welocome to build stage" 
    '''
     }
