@@ -14,7 +14,7 @@ echo " next stage is deploy"
 stage ('deploy') {
 steps{
 sh '''
-      echo "Executing the script.sh"
+      
       echo "Deploying is completed"
 '''
 }
