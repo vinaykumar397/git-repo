@@ -4,9 +4,6 @@ stages{
 stage ('build') {
 steps{
 sh '''
-     sh 'ls -l $WORKSPACE'
-sh 'echo Listing WORKSPACE contents: && ls -l "$WORKSPACE"'
-
 echo "Build stage is completed"
 echo " next stage is deploy"
 '''
