@@ -7,7 +7,7 @@ pipeline {
         // First 5 stages on NODE1
         // -------------------------
         stage('Stage 1 - NODE1') {
-            agent { label 'Node2' }
+            agent { label 'Node1' }
             steps {
                 echo "Running Stage 1 on NODE1"
                 sh 'hostname'
@@ -15,7 +15,7 @@ pipeline {
         }
 
         stage('Stage 2 - NODE1') {
-            agent { label 'Node2' }
+            agent { label 'Node1' }
             steps {
                 echo "Running Stage 2 on NODE1"
                 sh 'hostname'
@@ -23,7 +23,7 @@ pipeline {
         }
 
         stage('Stage 3 - NODE1') {
-            agent { label 'Node2' }
+            agent { label 'Node1' }
             steps {
                 echo "Running Stage 3 on NODE1"
                 sh 'hostname'
@@ -31,7 +31,7 @@ pipeline {
         }
 
         stage('Stage 4 - N0de2') {
-            agent { label 'Node2' }
+            agent { label 'Node1' }
             steps {
                 echo "Running Stage 4 on NODE1"
                 sh 'hostname'
@@ -39,7 +39,7 @@ pipeline {
         }
 
         stage('Stage 5 - NODE1') {
-            agent { label 'Node2' }
+            agent { label 'Node1' }
             steps {
                 echo "Running Stage 5 on NODE1"
                 sh 'hostname'
