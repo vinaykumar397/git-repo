@@ -1,1 +1,93 @@
+pipeline {
+    agent none    // No default agent; we’ll assign nodes for each stage
+    
+    stages {
+
+        // -------------------------
+        // First 5 stages on NODE1
+        // -------------------------
+        stage('Stage 1 - NODE1') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 1 on NODE1"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 2 - NODE1') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 2 on NODE1"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 3 - NODE1') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 3 on NODE1"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 4 - N0de2') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 4 on NODE1"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 5 - NODE1') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 5 on NODE1"
+                sh 'hostname'
+            }
+        }
+
+        // -------------------------
+        // Next 5 stages on NODE2
+        // -------------------------
+        stage('Stage 6 - NODE2') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 6 on NODE2"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 7 - Node2') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 7 on NODE2"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 8 - NODE2') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 8 on NODE2"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 9 - NODE2') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 9 on NODE2"
+                sh 'hostname'
+            }
+        }
+
+        stage('Stage 10 - NODE2') {
+            agent { label 'Node2' }
+            steps {
+                echo "Running Stage 10 on NODE2"
+                sh 'hostname'
+            }
+        }
+    }
+}
 
